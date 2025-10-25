@@ -39,7 +39,7 @@ const pool = new Pool({
 app.get("/estudiantes", async (_req, res) => {
     try {
         const result = await pool.query(
-            "SELECT id, nombre, expediente, codigo, creado_en FROM estudiantes ORDER BY id"
+            "SELECT id, nombre, expediente, codigo, fecha_registro FROM estudiantes ORDER BY id"
         );
         res.json({ success: true, count: result.rows.length, data: result.rows });
     } catch (error) {
