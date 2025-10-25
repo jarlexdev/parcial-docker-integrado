@@ -1,0 +1,16 @@
+{
+    "name": "parcial-docker-integrado",
+    "version": "1.0.0",
+    "description": "Proyecto parcial Docker integrado",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "dotenv": "^10.0.0",
+        "pg": "^8.7.1"
+    },
+    "author": "Dennys",
+    "license": "ISC"
+}
